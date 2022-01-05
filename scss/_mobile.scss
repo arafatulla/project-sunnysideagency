@@ -1,0 +1,198 @@
+@media screen and (max-width: 28.2rem){
+    header{
+        background-image: url(../images/mobile/image-header.jpg);
+        background-position: center center;
+        height: 100%;
+        padding-bottom: 2rem;
+        nav{
+            height: 4rem;
+            .logo{
+                a{
+                    width: 60%;
+                }
+            }
+            .menu{
+                position: relative;
+                padding-left: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .option{
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    .first{
+                        transform-origin: left;
+                        transform: rotate(0) translateY(0);
+                        transition: transform 1s ease-in-out;
+                    }
+                    .second{
+                        opacity: 1;
+                        transition: opacity 600ms ease-in-out;
+                    }
+                    .third{
+                        transform-origin: left;
+                        transform: rotate(0) translateY(-0);
+                        transition: transform 1s ease-in-out;
+                    }
+                }
+                ul{
+                    width: 22rem;
+                    height: 18rem;
+                    color: black;
+                    border-radius: 2rem;
+                    background-color: $White;
+                    display: none;
+                    position: absolute;
+                    top: 3rem;
+                    left: 0;
+                    right: 0;
+                    transform: translateX(-50%);
+                    animation: menuShow 1s forwards;
+                    flex-direction: column;
+                    z-index: 2;
+                    li{
+                        padding: 0.5rem 1rem;
+                        color: $Grayishblue;
+                    }
+                    li:hover{
+                        color: black;
+                    }
+                    .btn-top{
+                        border-radius: 2rem;
+                        background-color: $Yellow;
+                    }
+                    .btn-top:hover{
+                        background-color: rgb(138, 136, 136);
+                        color: $Yellow;
+                    }
+                }
+                .view{
+                    display: flex;
+                }
+                .openMenu{
+                    .first{
+                        transform: rotate(45deg) translateY(2px);
+                        border-radius: 2rem;
+                    }
+                    .second{
+                        opacity: 0;
+                    }
+                    .third{
+                        transform: rotate(-45deg) translateY(-2px);
+                        border-radius: 2rem;
+                    }
+                }
+            }
+        }
+        section{
+            height: max-content;
+            h1{
+                font-size: 3rem;
+                text-align: center;
+            }
+            .line{
+                margin-top: 2rem;
+                height: 6rem;
+            }
+        }
+    }
+    main{
+        .categories{
+            grid-template-columns: repeat(1, 100vw);
+            grid-template-rows: 300px 300px 300px 300px 500px 500px;
+            .part{
+                padding: 0 3rem;
+                align-items: center;
+                h3{
+                    width: 100%;
+                    text-align: center;
+                    font-size: 1.5rem;
+                }
+                p{
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 0.8rem;
+                }
+                a{
+                    font-size: 1rem;
+                }
+                a:hover{
+                    transform: scale(1.1) translateX(0%);
+                }
+            }
+            .part-2{
+                background-image: url(../images/mobile/image-transform.jpg);
+                grid-row: 1/2;
+            }
+            .part-3{
+                background-image: url(../images/mobile/image-stand-out.jpg);
+            }
+            .part-5{
+                background-image: url(../images/mobile/image-graphic-design.jpg);
+                padding-bottom: 5rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                h3{
+                    padding: 3rem;
+                }
+                p{
+                    margin-top: 1rem;
+                }
+            }
+            .part-6{
+                background-image: url(../images/mobile/image-photography.jpg);
+                padding-bottom: 5rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                h3{
+                    padding: 3rem;
+                }
+                p{
+                    margin-top: 1rem;
+                }
+            }
+        }
+        .testimonials{
+            padding: 0 2rem;
+            grid-template-areas: "head"
+            "client1"
+            "client2"
+            "client3";
+            gap: 1rem;
+            .clients{
+                height: 100%;
+                .profile-pic{
+                    width: 5rem;
+                    height: 5rem;
+                }
+                .comments{
+                    padding: 2rem 1rem;
+                }
+                .client-details{
+                    padding-bottom: 2rem;
+                }
+            }
+        }
+        .last{
+            height: 18rem;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+    footer{
+        padding-bottom: 4rem;
+        .logo{
+            padding: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu{
+            margin: 0;
+            padding: 2rem;
+        }
+    }
+}
