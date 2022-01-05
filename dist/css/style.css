@@ -420,9 +420,10 @@ footer .socialmedia i:hover {
   header nav .menu {
     position: relative;
     padding-left: 2rem;
+    padding-top: 1rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
   header nav .menu .option {
     position: relative;
