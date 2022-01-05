@@ -414,6 +414,9 @@ footer .socialmedia i:hover {
   header nav {
     height: 4rem;
   }
+  header nav .logo {
+    padding-top: 9px;
+  }
   header nav .logo a {
     width: 60%;
   }
